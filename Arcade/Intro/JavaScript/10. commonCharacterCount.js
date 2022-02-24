@@ -1,6 +1,5 @@
 /*
-  O(n + m) time | O(n) space - where n is the length of the first input string and m is the length of the second input string 
-  We could technically improve space complexity by storing min length string, however, in the worst-case scenario we might still get the same length of strings
+  O(n + m) time | O(n) space - where n is the length of the s1 and m is the length of the s2 
 */
 
 function solution(s1, s2) {
