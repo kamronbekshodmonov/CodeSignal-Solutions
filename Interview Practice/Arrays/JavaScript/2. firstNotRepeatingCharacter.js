@@ -3,15 +3,15 @@
 */
 
 function solution(s) {
-  const seenCharacters = {};
+  const seenChars = {};
+
   for (const char of s) {
-    char in seenCharacters
-      ? seenCharacters[char]++
-      : (seenCharacters[char] = 1);
+    if (!seenChars.hasOwnProperty(char)) seenChars[char] = 0;
+    seenChars[char]++;
   }
 
-  for (const key in seenCharacters) {
-    if (seenCharacters[key] === 1) return key;
+  for (const key in seenChars) {
+    if (seenChars[key] === 1) return key;
   }
 
   return "_";
