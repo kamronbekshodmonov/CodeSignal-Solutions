@@ -1,5 +1,5 @@
 /*
-  O(n*m) time | O(1) space - where n is the length of the first input string and m is the length of the second input string
+  O(n * m) time | O(1) space - where n is the length of the first input string and m is the length of the second input string
 */
 
 function solution(s, t) {
