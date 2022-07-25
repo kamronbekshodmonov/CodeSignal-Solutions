@@ -1,5 +1,5 @@
 /*
-  O(m*n!) time | O(m*n) space - where n is the length of the coins array and m is the max number in quantity array
+  O(m * n!) time | O(m * n) space - where n is the length of the coins array and m is the max number in quantity array
 */
 
 function solution(coins, quantity) {
