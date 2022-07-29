@@ -1,5 +1,5 @@
 /*
-  O(n * klog(k)) time | O(1) space - where n is the length of the input array and k is the second input
+  O(n + klog(k)) time | O(1) space - where n is the length of the input array and k is the second input
 */
 
 function solution(nums, k) {
