@@ -1,5 +1,5 @@
 /*
-  O(n*n!) time | O(n*n!) space - where n is the length of the input array
+  O(n * n!) time | O(n * n!) space - where n is the length of the input array
 */
 
 function solution(inputArray) {
