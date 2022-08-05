@@ -3,6 +3,6 @@
 */
 
 function solution(address) {
-  const splittedArr = address.split("@");
-  return splittedArr[splittedArr.length - 1];
+  const addressSplit = address.split("@");
+  return addressSplit[addressSplit.length - 1];
 }
