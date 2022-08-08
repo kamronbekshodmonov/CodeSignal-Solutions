@@ -3,26 +3,26 @@
 */
 
 function solution(ver1, ver2) {
-  const ver1Splitted = ver1.split(".");
-  const ver2Splitted = ver2.split(".");
-  const minLength = Math.min(ver1Splitted.length, ver2Splitted.length);
-  const maxLength = Math.max(ver1Splitted.length, ver2Splitted.length);
+  const ver1Split = ver1.split(".");
+  const ver2Split = ver2.split(".");
+  const minLength = Math.min(ver1Split.length, ver2Split.length);
+  const maxLength = Math.max(ver1Split.length, ver2Split.length);
 
   let pointer = 0;
   while (pointer < minLength) {
-    const ver1Num = Number(ver1Splitted[pointer]);
-    const ver2Num = Number(ver2Splitted[pointer]);
+    const ver1Num = Number(ver1Split[pointer]);
+    const ver2Num = Number(ver2Split[pointer]);
     if (ver1Num > ver2Num) return true;
     if (ver1Num < ver2Num) return false;
     pointer++;
   }
 
-  const isLengthNotEqual = ver1Splitted.length !== ver2Splitted.length;
-  const isVer1Longer = ver1Splitted.length > ver2Splitted.length;
+  const isLengthNotEqual = ver1Split.length !== ver2Split.length;
+  const isVer1Longer = ver1Split.length > ver2Split.length;
 
   if (isLengthNotEqual && isVer1Longer) {
     while (pointer < maxLength) {
-      if (Number(ver2Splitted[pointer]) > 0) return true;
+      if (Number(ver2Split[pointer]) > 0) return true;
       pointer++;
     }
   }
