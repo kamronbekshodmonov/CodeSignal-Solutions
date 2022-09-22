@@ -1,3 +1,7 @@
+/*
+  O(n) time | O(1) space - where n is the total number of elements in the array
+*/
+
 function solution(matrix) {
   let result = 0;
 
