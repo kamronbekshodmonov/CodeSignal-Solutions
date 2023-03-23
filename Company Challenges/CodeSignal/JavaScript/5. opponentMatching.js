@@ -1,5 +1,5 @@
 /*
-  O(n * n^2) time | O(n) space - where n is the length of the input array
+  O(n^2) time | O(n) space - where n is the length of the input array
 */
 
 function solution(xp) {
