@@ -3,5 +3,5 @@
 */
 
 function solution(n) {
-  return (n - (n % 10)) / 10 + (n % 10);
+  return Math.floor(n / 10) + n % 10;
 }
